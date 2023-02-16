@@ -1,0 +1,21 @@
+{
+  "name": "qazando-testes",
+  "version": "1.0.0",
+  "description": "Testes Qutomatizados em Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps --reporter mochawesome",
+    "ios": "PLATFORM=iOS APP='/Users/johnathanf/Downloads/appsqazando/qazandoapp.app' DEVICE='iPhone 14 Pro' VERSION=16.2 AUTOMATION=XCUITest npx codeceptjs run --steps",
+    "android": "PLATFORM=Android APP='/Users/johnathanf/Downloads/appsqazando/app-release.apk' DEVICE=nexus VERSION=12 PACKAGE=com.qazandoapp ACTIVITY=MainActivity npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.7",
+    "mochawesome": "^7.1.3",
+    "webdriverio": "^8.3.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
