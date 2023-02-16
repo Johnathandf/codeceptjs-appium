@@ -5,13 +5,15 @@
 '''
 npm install
 '''
-# To run tes:
+# To run test:
 iOS:
+
 '''
 npm rum ios
 ''''
 
 Andoid:
+
 '''
 npm rum android
 '''
